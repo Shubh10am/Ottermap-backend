@@ -1,4 +1,3 @@
-Sure! Here’s the updated README with a single section added to indicate that the API can be accessed directly at the deployed URL:
 
 ```markdown
 # Shop API
@@ -47,7 +46,18 @@ Welcome to the Shop API! This API provides endpoints for managing shop details, 
 - **Credentials**: 
   - Username: `shubh`
   - Password: `shubh@12`
-  
+
+#### Response Example
+```json
+{
+    "data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyOTI3MzE1NiwianRpIjoiNTkzODNiNzItMzI0Yy00ODRlLWEwZmUtY2U4ZGJkMDEzNDY2IiwidHlwZSI6ImFjY2VzcyIsImlkZW50aXR5Ijoic2h1YmgiLCJuYmYiOjE3MjkyNzMxNTYsImV4cCI6MTcyOTI3NDA1Nn0.hMSU5uDnCDFvjx6R82QjgBr7tZKieVEt4mmajCIQ7IE",
+    "status_code": 200,
+    "message_code": "success",
+    "message": "Token Generated successfully",
+    "success": true
+}
+```
+
 ### 2. Register a Shop
 
 - **Endpoint**: `/shops/register`
@@ -58,6 +68,22 @@ Welcome to the Shop API! This API provides endpoints for managing shop details, 
   - `latitude`: Latitude of the shop (-90 to 90)
   - `longitude`: Longitude of the shop (-180 to 180)
 
+#### Response Example
+```json
+{
+    "data": {
+        "shop_id": "shop_uFloRgtVwzurtiPIprBX",
+        "name": "Shop E",
+        "latitude": 19.34,
+        "longitude": 110.78
+    },
+    "status_code": 200,
+    "success": true,
+    "message": "Shop Details Saved Successfully",
+    "message_code": "success"
+}
+```
+
 ### 3. Search Shops
 
 - **Endpoint**: `/shops/search`
@@ -66,6 +92,34 @@ Welcome to the Shop API! This API provides endpoints for managing shop details, 
   - `latitude`: User's latitude
   - `longitude`: User's longitude
 - **Description**: Returns a list of shops sorted by distance from the user's location.
+
+#### Response Example
+```json
+{
+    "data": [
+        {
+            "name": "Shop D",
+            "distance": 0.0
+        },
+        {
+            "name": "Shop C",
+            "distance": 10696.51
+        },
+        {
+            "name": "Shop C",
+            "distance": 10696.51
+        },
+        {
+            "name": "Shop D",
+            "distance": 10696.51
+        }
+    ],
+    "status_code": 200,
+    "message_code": "success",
+    "message": "Shops fetched successfully",
+    "success": true
+}
+```
 
 ## Direct API Access
 
