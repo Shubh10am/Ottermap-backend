@@ -1,3 +1,4 @@
+Sure! Here’s the updated README with a single section added to indicate that the API can be accessed directly at the deployed URL:
 
 ```markdown
 # Shop API
@@ -23,7 +24,7 @@ Welcome to the Shop API! This API provides endpoints for managing shop details, 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/shop-api.git
+   git clone https://github.com/Shubh10am/Ottermap-backend.git
    cd shop-api
    ```
 
@@ -66,6 +67,10 @@ Welcome to the Shop API! This API provides endpoints for managing shop details, 
   - `longitude`: User's longitude
 - **Description**: Returns a list of shops sorted by distance from the user's location.
 
+## Direct API Access
+
+You can also hit the API directly at the deployed URL: [https://ottermap-backend.onrender.com](https://ottermap-backend.onrender.com).
+
 ## Utilities
 
 ### Haversine Function
@@ -97,21 +102,3 @@ def haversine(lat1, lon1, lat2, lon2):
 - 🔒 [Flask-JWT-Extended](https://flask-jwt-extended.readthedocs.io/)
 - 📊 [MongoDB](https://www.mongodb.com/)
 ```
-
-### Icons Used
-- 🛠️ - Tool
-- 🏪 - Shop
-- 🔍 - Magnifying Glass
-- 🐍 - Snake (Python)
-- 📦 - Package
-- 🔑 - Key
-- 🗄️ - File Cabinet
-- 🐘 - Elephant (PostgreSQL)
-- 🤝 - Handshake
-- 📜 - Scroll
-- 🍔 - Hamburger (Flask)
-- 🏗️ - Building Construction (Flask-RESTx)
-- 🔒 - Lock (Flask-JWT-Extended)
-- 📊 - Bar Chart (MongoDB)
-
-Feel free to customize the emojis or add your own icons as needed!
