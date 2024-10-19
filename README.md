@@ -34,11 +34,11 @@ Welcome to the Shop API! This API provides endpoints for managing shop details, 
 
 3. Set up your MongoDB database.
 
-4. Configure your environment variables for database connection and JWT secret. Make sure to include the MONGO_HOST key in your .env file.
+4. Configure your environment variables for database connection and JWT secret. **Make sure to include the MONGO_HOST key in your .env file.**
 
 ## API Endpoints
 
-### 1. Create Access Token
+### 1. Create Access Token 
 
 - **Endpoint**: `/shops/create-token`
 - **Method**: `POST`
