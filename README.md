@@ -145,9 +145,6 @@ def haversine(lat1, lon1, lat2, lon2):
 
 🤝 Feel free to fork the repository, make changes, and submit a pull request. Any improvements, bug fixes, or features are welcome!
 
-## License
-
-📜 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
